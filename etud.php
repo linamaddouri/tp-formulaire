@@ -18,8 +18,10 @@
 <?php
 if ($moyenne >= 10) {
     $statut = "admis(e)";
+    $classeStatut = "admis";
 } else {
     $statut = "non admis(e)";
+    $classeStatut = "non-admis";
 }
 ?>
 <!-- <p>
@@ -51,7 +53,11 @@ switch($filliere) {
 
     <p>Moyenne : <?php echo $moyenne; ?>/20</p>
     <p>Année d'étude : <?php echo $anneeEtude; ?></p>
-    <p>Statut : <?php echo $statut; ?></p>
+    <p>Statut :
+    <span class="<?php echo $classeStatut; ?>">
+        <?php echo $statut; ?>
+    </span>
+</p>
     <p>Boursier : <?php echo $estboursier ? "Oui" : "Non"; ?></p>
 </div>
 </body>

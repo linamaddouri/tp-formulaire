@@ -11,37 +11,54 @@
   border-radius: 20px;
   color: #fff;
 }
-.badge-info  { background: #0e33d5; }
-.badge-elec  { background: #6249b6; }
+.badge-info  { background: #4F5B93; }
+.badge-elec  { background: #F5A524; }
+
+----------------------------
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #3a5efe;
+    background: #ffffff;
+    margin: 0;
+    padding: 20px;
+    color: #19355D;
 }
 
 .fiche {
     max-width: 320px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 12px;
-    background: white;
+    margin: 30px auto;
+    padding: 25px 20px;
+    border-radius: 15px;
+    background: #F4F5FC;
     text-align: center;
-    box-shadow: 0 4px 10px #00000015;
+    box-shadow: 0 4px 12px rgba(25, 53, 93, 0.12);
+    transition: 0.3s;
 }
 
-h2 {
-    color: #4F5B93;
+.fiche:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(25, 53, 93, 0.18);
 }
 
-p {
-    color: #333;
-    padding: 5px;
+.fiche h2 {
+    color: #19355D;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.fiche p {
+    color: #60749A;
+    font-size: 14px;
+    margin: 18px 0;
 }
 
 .badge {
-    padding: 4px 12px;
+    display: inline-block;
+    padding: 6px 14px;
     border-radius: 20px;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .badge-info {
@@ -51,7 +68,17 @@ p {
 .badge-elec {
     background: #F5A524;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #EDEFF8;
+
+.badge-default {
+    background: #888888;
+}
+
+.fiche p:last-child {
+    color: #F5A524;
+    font-weight: bold;
+}
+
+.admis {
+    color: #16A34A;
+    font-weight: bold;
 }
